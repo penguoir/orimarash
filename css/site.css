@@ -1,0 +1,79 @@
+---
+---
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;700&display=swap");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "_includes/syntax";
+
+.measure {
+  max-width: 30rem;
+}
+
+.markdown {
+  @apply text-gray-900 leading-normal;
+}
+
+.markdown ul {
+  @apply list-disc list-inside;
+}
+
+.markdown ol {
+  @apply list-decimal list-inside;
+}
+
+.markdown > * + *,
+.markdown li > p + p {
+  @apply mt-3;
+}
+
+.markdown li + li {
+  @apply mt-1;
+}
+
+.markdown strong {
+  @apply text-black font-bold;
+}
+.markdown a {
+  @apply text-blue-600 underline;
+}
+
+.markdown a:hover {
+  @apply text-blue-700;
+}
+
+.markdown strong a {
+  @apply font-bold;
+}
+
+.markdown h2 {
+  @apply leading-tight text-2xl font-bold text-black mb-2 mt-10 border-b border-gray-700 pb-2;
+}
+
+.markdown h3 {
+  @apply leading-tight text-xl font-bold text-black mt-8 mb-2;
+}
+
+.markdown blockquote {
+  @apply border-l-4 border-gray-400 pl-4 italic;
+}
+
+.markdown code {
+  @apply bg-gray-200 leading-tight;
+}
+
+.markdown img {
+  @apply mx-auto;
+}
+
+.markdown pre {
+  @apply bg-gray-200 p-3 rounded overflow-x-scroll;
+}
+.markdown ul,
+.markdown ol {
+  @apply pl-5;
+}
+
+
+@tailwind utilities;

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="mt-8 p-3 mx-auto" style="max-width: 40rem">
+  <a href="/" class="text-blue-700">&larr; Back</a>
+  <h1 class="font-bold my-1 text-3xl text-gray-900 leading-tight">
+    {{ page.title }}
+  </h1>
+  <p class="text-gray-800 mb-5">Posted on {{ page.date | date: "%b %d, %Y" }}</p>
+  <div class="markdown">
+    {{ content }}
+  </div>
+
+  <div class="w-50 my-8">
+    <img src="/assets/images/end-squiggle.svg" alt="squiggle">
+  </div>
+
+  <a class="mt-5 text-blue-700 block" href="#">&uarr; Back to top</a>
+</div>

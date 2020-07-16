@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    {% feed_meta %}
+    {% seo %}
+    <link rel="stylesheet" href="/css/site.css">
+
+    <link rel="shortcut icon" href="/assets/images/avatar.png" type="image/png">
+  </head>
+  <body>
+    <main>
+      {{ content }}
+    </main>
+
+    <footer class="measure mx-auto mb-16">
+      <div class="w-32 border-t-2 mb-4 border-gray-900"></div> 
+      <p class="mb-4 text-gray-800">
+        Copyright (c) 2020 - Ori Marash
+      </p>
+      {% include links.html %}
+    </footer>
+  </body>
+</html>
+
