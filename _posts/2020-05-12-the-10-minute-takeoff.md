@@ -3,21 +3,21 @@ layout: post
 title: Creating a competition using Firebase realtime PubSub
 date: 2020-05-12T17:38:38.036Z
 learned:
-  - Database structure + realtime databases
+  - Database structure + real-time databases
   - Using Google Maps API
   - React
 ---
-As part of a school fundraiser, our class had to find some way to raise money for a charity. One of the students in our class (Miles Hinders-Green) had the idea to run a contest to see who could get the furthest away from school in 10 minutes. [Felix Ronneberger](https://github.com/conition) and I really liked this idea so we decided to turn this into a proper project.
+As part of a school fundraiser, our class had to find some way to raise money for a charity. One of the students in our class (Miles Hinders-Green) had the idea to run a contest to see who could get the furthest away from school in 10 minutes. [Felix Ronneberger](https://github.com/conition) and I liked this idea so we decided to turn this into a proper project.
 
-There were a few problems the race needed to be solved for it to run properly. First, there had to be a way to track the players so the winner could be fairly and objectively decided. Secondly, there had to be a way to view the contestants. Viewing would create another income opportunity for the charity, as we could charge people to watch the locations of the players. We thought that these two problems could be solved with an app, and a website. So we set out to create both in time for the race.
+There were a few problems the race needed to be solved for it to run properly. First, there had to be a way to track the players so the winner could be fairly and objectively decided. Secondly, there had to be a way to view the contestants. Viewing would create another income opportunity for the charity, as we could charge people to watch the locations of the players. We thought that these two problems could be solved with an app and a website. So we set out to create both in time for the race.
 
 ## The database
 
-To track where each player is, there had to be a shared location for the app to send the location and for the website to read the location. We decided to use Firebase’s Firestore because it was cheap, could update in real time, and would be fairly easy to integrate into an app and a website.
+To track where each player is, there had to be a shared location for the app to send the location and for the website to read the location. We decided to use Firebase’s Firestore because it was cheap, could update in real-time, and would be fairly easy to integrate into an app and a website.
 
 Since this would be a fairly small event, and the data stored isn’t sensitive, we weren’t too worried about security. We implemented some simple rules to stop random people from accessing the database, but I’m sure that with enough effort that could be cracked easily. In an industry application, we would have implemented more security rules, with authentication and verification.
 
-Since Firestore is no-sql, structuring the database took some time. At the end, we decided to save the data like so:
+Since Firestore is no-SQL, structuring the database took some time. In the end, we decided to save the data like so:
 
 ![Database schema of "coords", which holds 'id'; 'longitutde' and 'latitude'; distance; user id; and timestamp](/assets/10mtakeoff/database.png)
 
