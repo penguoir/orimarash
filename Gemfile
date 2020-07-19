@@ -1,11 +1,13 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.8.5"
+# Github pages gem
 
 group :jekyll_plugins do
+  gem "github-pages"
   gem "jekyll-feed"
   gem "jekyll-sitemap"
   gem "jekyll-seo-tag"
+  # For processing tailwind
   gem "jekyll-postcss"
 end
 
