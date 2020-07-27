@@ -1,5 +1,61 @@
-_site
-.sass-cache
-.DS_STORE
+# Created by https://www.toptal.com/developers/gitignore/api/jekyll,linux,yarn,vim
+# Edit at https://www.toptal.com/developers/gitignore?templates=jekyll,linux,yarn,vim
+
+### Jekyll ###
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-node_modules
+
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
+
+### yarn ###
+node_modules/
+# https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
+
+# .yarn/unplugged and .yarn/build-state.yml should likely always be ignored since
+# they typically hold machine-specific build artifacts. Ignoring them might however
+# prevent Zero-Installs from working (to prevent this, set enableScripts to false).
+.yarn/unplugged
+.yarn/build-state.yml
+
+# .yarn/cache and .pnp.* may be safely ignored, but you'll need to run yarn install
+# to regenerate them between each branch switch.
+# Uncomment the following lines if you're not using Zero-Installs:
+# .yarn/cache
+# .pnp.*
+
+# End of https://www.toptal.com/developers/gitignore/api/jekyll,linux,yarn,vim
