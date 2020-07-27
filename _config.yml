@@ -17,14 +17,14 @@ plugins:
   - jekyll-postcss
 
 # jekyll-seo-tag configuration
-author: ""
-url: ""
-title: ""
-description: ""
+author: "Ori Marash"
+url: "https://orimarash.com"
+title: "Ori Marash"
+description: "Ori Marash is a programmer"
 twitter:
-  username: ""
+  username: "penguoir"
   card: ""
-logo: "path/to/image"
+logo: "/assets/images/avatar.png"
 
 
 # Exclude from processing.

@@ -1,8 +1,15 @@
 source "https://rubygems.org"
 
+gem "jekyll"
+
 group :jekyll_plugins do
-  gem "github-pages"
   # For processing tailwind
+  gem "jekyll-postcss"
+  
+  # Other jekyll plugins
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
   gem "jekyll-postcss"
 end
 
