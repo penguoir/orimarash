@@ -48,7 +48,8 @@
 }
 
 .markdown h2 {
-  @apply leading-tight text-2xl font-bold text-black mb-2 mt-10 border-b border-gray-700 pb-2;
+  @apply leading-tight text-2xl font-bold text-black mb-2 mt-10 pb-2;
+  border-bottom: 1px solid #CBD5E0;
 }
 
 .markdown h3 {
@@ -65,6 +66,11 @@
 
 .markdown img {
   @apply mx-auto;
+}
+
+.markdown img.emoji {
+  display: inline;
+  margin: 0;
 }
 
 .markdown pre {
