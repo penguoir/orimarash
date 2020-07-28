@@ -1,11 +1,15 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.8.5"
+gem "jekyll"
 
 group :jekyll_plugins do
+  # For processing tailwind
+  gem "jekyll-postcss"
+  
+  # Other jekyll plugins
   gem "jekyll-feed"
-  gem "jekyll-sitemap"
   gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
   gem "jekyll-postcss"
   gem "jemoji"
 end

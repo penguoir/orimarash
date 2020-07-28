@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "yarn install && bundle exec jekyll build"
+  },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.2.0",
     "autoprefixer": "^9.7.6",
