@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "yarn install && bundle exec jekyll build"
+    "build": "bundle exec jekyll build"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.2.0",
