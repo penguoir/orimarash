@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TedX talk on project-based learning
-date: 2020-02-24 12:54 +0100
+date: 2020-02-24T12:54:38.036Z
 learned:
   - Public speaking
   - Project-based learning
