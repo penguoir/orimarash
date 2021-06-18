@@ -43,3 +43,4 @@ exclude:
   - netlify.toml
   - bin
   - .gitignore
+  - vendor
