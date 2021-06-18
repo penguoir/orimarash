@@ -7,22 +7,26 @@ learned:
   - Unix commands
 ---
 
-For my computer science coursework (which will have an article later), I need to
+For my computer science coursework (which will have a writeup later), I need to
 write a report. This report is important as it is the main factor in influencing
 how many marks I get.
 
-I have a few requirements for writing this:
+I have a few requirements for how I'd like to edit this report:
 
   * Seperate files for seperate topics
   * A way to include parts from the specification at the top of each file (so I
-    don't have to swap to the pdf all the time)
-  * Markdown
+    don't have to swap to the specification all the time)
+  * Written in markdown format
   * Can edit using Vim (the only real editor)
  
 I know, I'm picky.
 
-I couldn't really find anything online that covered all of these requirements,
-so, being the good little developer I am, I decided to build my own solution.
+Normally, I would use Jekyll for this. Sadly, there isn't a good way to bring
+together multiple pages into one using Jekyll. Also, it has much more
+functionality than I need.
+
+I couldn't really find anything online that covered all of my requirements, so,
+always happy to waste an afternoon, I decided to build my own solution.
 
 The solution
 ------------
