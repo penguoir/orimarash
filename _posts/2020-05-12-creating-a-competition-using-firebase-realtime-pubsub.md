@@ -21,7 +21,7 @@ Since this would be a fairly small event, and the data stored isn’t sensitive,
 
 Since Firestore is no-SQL, structuring the database took some time. In the end, we decided to save the data like so:
 
-[![Database schema of "coords", which holds 'id'; 'longitutde' and 'latitude'; distance; user id; and timestamp]({{ "/assets/posts/creating-a-competition-using-firebase-realtime-pubsub/img-0.png" | relative_url }})](https://github.com/penguoir/orimarash/blob/master/assets/10mtakeoff/database.png)
+[![Database schema of "coords", which holds 'id'; 'longitutde' and 'latitude'; distance; user id; and timestamp]({{ "/assets/posts/creating-a-competition-using-firebase-realtime-pubsub/img-0.png" | relative_url }})]({{ "/assets/10mtakeoff/database.png" | relative_url }})
 
 A collection called \`coords\`, inside of which are loads of documents, each with a timestamp, user, aerial distance (as the crow flies) from the starting location, and coordinates. The app would—every time the location changed—send the new information. The website—every time the information changed—would present the new information.
 
@@ -48,7 +48,7 @@ I uploaded the website quite easily using [Now.sh](https://github.com/zeit/now),
 
 ## Summary
 
-[![Taking off]({{ "/assets/posts/creating-a-competition-using-firebase-realtime-pubsub/img-1.jpg" | relative_url }})](https://github.com/penguoir/orimarash/blob/master/assets/10mtakeoff/taking-off.jpg)
+[![Taking off]({{ "/assets/posts/creating-a-competition-using-firebase-realtime-pubsub/img-1.jpg" | relative_url }})]({{ "/assets/10mtakeoff/taking-off.jpg" | relative_url }})
 
 _Taking off_
 

@@ -13,7 +13,7 @@ _I'm legally required to say that we don't hack computers, we're just program. (
 
 Hack Club is a programming club I run in my school every Tuesday at 4 pm. It is part of a larger group of Hack Clubs run all over the world. We get funding every term from GitHub (which sponsors Hack Club) and we just run lessons, workshops and fun games which help students ("learners") build a knowledge in computer science and programming.
 
-[![One of the later hackclub meetings]({{ "/assets/posts/running-a-programming-club-in-my-school/img-0.jpg" | relative_url }})](https://github.com/penguoir/orimarash/blob/master/assets/hackclub/meeting.jpg)
+[![One of the later hackclub meetings]({{ "/assets/posts/running-a-programming-club-in-my-school/img-0.jpg" | relative_url }})]({{ "/assets/hackclub/meeting.jpg" | relative_url }})
 
 ## Why we started Hack Club
 
@@ -37,7 +37,7 @@ Knowing that learners have to present their work at the end means they work hard
 
 -   **Keep a good atmosphere** Making sure everyone knows what they're doing, but still having fun is they key to a good session.
 
-[![Felix on the left, then two Hack Club members to the right.]({{ "/assets/posts/running-a-programming-club-in-my-school/img-1.jpg" | relative_url }})](https://github.com/penguoir/orimarash/blob/master/assets/hackclub/a-few-people.jpg)
+[![Felix on the left, then two Hack Club members to the right.]({{ "/assets/posts/running-a-programming-club-in-my-school/img-1.jpg" | relative_url }})]({{ "/assets/hackclub/a-few-people.jpg" | relative_url }})
 
 _Sometimes we didn't have that many people_
 
@@ -65,4 +65,4 @@ I made sure to never give away the actual _code_, as I used that as an exercise 
 
 Over the lockdown of 2020, everything changed. However, the online Hack Club community was stronger than ever. Weekly meetings with various famous creators were organised online. The whole community got to ask whichever questions we wanted, to some of the most knowledgable people around.
 
-[![Hack Club-exclusive meeting with Elon Musk (ft. me in my bed)]({{ "/assets/posts/running-a-programming-club-in-my-school/img-2.jpg" | relative_url }})](https://github.com/penguoir/orimarash/blob/master/assets/hackclub/elon-musk.jpg)
+[![Hack Club-exclusive meeting with Elon Musk (ft. me in my bed)]({{ "/assets/posts/running-a-programming-club-in-my-school/img-2.jpg" | relative_url }})]({{ "/assets/hackclub/elon-musk.jpg" | relative_url }})

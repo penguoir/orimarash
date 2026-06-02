@@ -2,9 +2,9 @@ title: "Ori Marash"
 description: "Ori Marash is a programmer. Write-ups on Rails, productivity systems, AI, and side projects."
 author: "Ori Marash"
 
-# Hosted as a GitHub Pages project site at https://penguoir.github.io/orimarash
-url: "https://penguoir.github.io"
-baseurl: "/orimarash"
+# Served at the custom apex domain orimarash.com (see CNAME), so no baseurl prefix.
+url: "https://orimarash.com"
+baseurl: ""
 
 twitter:
   username: "penguoir"

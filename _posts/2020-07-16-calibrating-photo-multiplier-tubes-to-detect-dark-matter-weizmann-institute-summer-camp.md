@@ -27,13 +27,13 @@ There are a lot of interesting details about how superradiation could be used to
 
 The actual process of collecting the data is complicated, and out of scope for this article. Once the data is collected, it is parsed by a data logger which writes all the collected data into a file of a custom 'DXD' format.
 
-[![The system which collects the data (with us hiding behind it)]({{ "/assets/posts/calibrating-photo-multiplier-tubes-to-detect-dark-matter-weizmann-institute-summer-camp/img-0.jpg" | relative_url }})](https://github.com/penguoir/orimarash/blob/master/assets/weizmann/hiding.jpg)
+[![The system which collects the data (with us hiding behind it)]({{ "/assets/posts/calibrating-photo-multiplier-tubes-to-detect-dark-matter-weizmann-institute-summer-camp/img-0.jpg" | relative_url }})]({{ "/assets/weizmann/hiding.jpg" | relative_url }})
 
 Once this file is saved, we can start running analysis on it.
 
 The file is essentially a spreadsheet which contains the light readings from each photo-multiplier tube. They look something like this:
 
-[![Example reading from PMT]({{ "/assets/posts/calibrating-photo-multiplier-tubes-to-detect-dark-matter-weizmann-institute-summer-camp/img-1.png" | relative_url }})](https://github.com/penguoir/orimarash/blob/master/assets/weizmann/example.png)
+[![Example reading from PMT]({{ "/assets/posts/calibrating-photo-multiplier-tubes-to-detect-dark-matter-weizmann-institute-summer-camp/img-1.png" | relative_url }})]({{ "/assets/weizmann/example.png" | relative_url }})
 
 ### Processing data
 
@@ -65,11 +65,11 @@ Once we had processed the data and understood the process, we were ready for our
 
 We had about ten minutes to present, with a few more minutes for questions. We had to articulate our complicated research over the two weeks to a general audience. However, there were some professors too, so we had to ensure what we said was accurate.
 
-Also, we had to write up [a report explaining our research](https://github.com/penguoir/orimarash/blob/master/assets/weizmann/report.pdf). This was very insightful as it was the first time I had to write a report document about a computer science project, which is often done in academia.
+Also, we had to write up [a report explaining our research]({{ "/assets/weizmann/report.pdf" | relative_url }}). This was very insightful as it was the first time I had to write a report document about a computer science project, which is often done in academia.
 
 ## The social side
 
-[![The amazing view from the observatory, previously a particle accelerator]({{ "/assets/posts/calibrating-photo-multiplier-tubes-to-detect-dark-matter-weizmann-institute-summer-camp/img-2.jpg" | relative_url }})](https://github.com/penguoir/orimarash/blob/master/assets/weizmann/the-view.jpg)
+[![The amazing view from the observatory, previously a particle accelerator]({{ "/assets/posts/calibrating-photo-multiplier-tubes-to-detect-dark-matter-weizmann-institute-summer-camp/img-2.jpg" | relative_url }})]({{ "/assets/weizmann/the-view.jpg" | relative_url }})
 
 _The amazing view from the observatory, previously a particle accelerator_
 

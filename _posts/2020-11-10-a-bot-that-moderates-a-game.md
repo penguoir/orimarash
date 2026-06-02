@@ -27,7 +27,7 @@ The way I understand this works, Discord makes a request to your server every ti
 
 This is much more clever than how I thought it works, which is just constantly making requests to the server, checking for new messages.
 
-[![How the request to discord is made]({{ "/assets/posts/a-bot-that-moderates-a-game/img-0.png" | relative_url }})](https://github.com/penguoir/orimarash/blob/master/assets/discord/request-to-discord.png)
+[![How the request to discord is made]({{ "/assets/posts/a-bot-that-moderates-a-game/img-0.png" | relative_url }})]({{ "/assets/discord/request-to-discord.png" | relative_url }})
 
 ## There's a Ruby package which does a lot of this for you
 
