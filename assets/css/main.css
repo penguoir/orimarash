@@ -6,6 +6,10 @@
   --border: #e5e7eb;
   --code-bg: #f6f8fa;
   --max: 44rem;
+  /* GitHub gist embeds style code with font-family: var(--fontStack-monospace),
+     a Primer variable they define on github.com but not in the embed stylesheet.
+     Define it here so embedded gists render monospace instead of inheriting body sans-serif. */
+  --fontStack-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
 }
 
 * { box-sizing: border-box; }
