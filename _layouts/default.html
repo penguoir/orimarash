@@ -1,25 +1,30 @@
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    {% feed_meta %}
-    {% seo %}
-    <link rel="stylesheet" href="/css/site.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {% feed_meta %}
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}">Writing</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </nav>
+    </header>
 
-    <link rel="shortcut icon" href="/assets/images/avatar.png" type="image/png">
-  </head>
-  <body>
     <main>
       {{ content }}
     </main>
 
-    <footer class="measure mx-auto mb-16">
-      <div class="w-32 border-t-2 mb-4 border-gray-900"></div> 
-      <p class="mb-4 text-gray-800">
-        Copyright (c) 2020 - Ori Marash
-      </p>
-      {% include links.html %}
+    <footer class="site-footer">
+      <p>© {{ site.author }}. Built with <a href="https://jekyllrb.com/">Jekyll</a>.</p>
     </footer>
-  </body>
+  </div>
+</body>
 </html>
-

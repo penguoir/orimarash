@@ -1,16 +1,26 @@
 ---
 layout: default
 ---
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.tags and page.tags.size > 0 %}
+        · {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% unless forloop.last %} {% endunless %}{% endfor %}
+      {% endif %}
+    </p>
+  </header>
 
-<div class="mt-8 mb-8 p-3 mx-auto" style="max-width: 40rem">
-  <a href="/" class="text-blue-700">&larr; Back</a>
-  <h1 class="font-bold my-1 text-3xl text-gray-900 leading-tight">
-    {{ page.title }}
-  </h1>
-  <p class="text-gray-800 mb-5">Posted on {{ page.date | date: "%b %d, %Y" }}</p>
-  <div class="markdown">
+  {% if page.image %}
+    <img class="post-feature" src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  {% endif %}
+
+  <div class="post-content">
     {{ content }}
   </div>
 
-  <a class="mt-8 text-blue-700 inline-block" href="#">&uarr; Back to top</a>
-</div>
+  <footer class="post-footer">
+    <a href="{{ '/' | relative_url }}">← All writing</a>
+  </footer>
+</article>

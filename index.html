@@ -1,45 +1,19 @@
 ---
 layout: default
 ---
+<section class="intro">
+  <h1>Ori Marash</h1>
+  <p>Programmer. Write-ups on Rails, productivity systems, AI, and side projects.</p>
+</section>
 
-<div class="measure text-center mt-8 mx-auto p-3">
-  <div class="w-32 mx-auto">
-    <img src="/assets/images/avatar.png" alt="a sketch drawing of ori">
-  </div>
-  <p>Hello, I'm</p>
-  <h1 class="text-4xl font-bold mb-2">Ori Marash</h1>
-  <p class="text-lg mb-5">I'm a computer science student who loves learning through doing projects</p>
-
-  <div class="mx-auto">
-    {% include links.html %}
-  </div>
-</div>
-
-<div class="my-5 container mx-auto p-3">
-  <img class="mx-auto" src="/assets/images/squiggle.svg" alt="squiggle">
-</div>
-
-<div class="measure mx-auto p-3">
-  <h2 class="text-2xl mb-2 font-bold">Projects</h2>
-  <p class="mb-8">I find that writing up the projects I do helps me learn from them more.
-  I figured I might as well publish them too!</p>
-
+<ul class="post-list">
   {% for post in site.posts %}
-    <a href="{{ post.url }}" class="block transition duration-300 transform hover:scale-110 p-3 mb-5"
-      style="
-        border: 6px solid;
-        border-image-source: url(assets/images/border-{% cycle "1", "2", "3" %}.svg);
-        border-image-slice: 8;
-      ">
-      <h3 class="text-xl font-semibold leading-tight">{{ post.title }}</h3>
-      <p class="text-gray-600 mb-2">Posted on {{ post.date | date: "%b %d, %Y" }}</p>
-
-      <p class="font-semibold">What I learned:</p>
-      <ul class="list-disc pl-5">
-        {% for learned in post.learned %}
-          <li>{{ learned }}</li>
-        {% endfor %}
-      </ul>
-    </a>
+    <li class="post-list-item">
+      <a class="post-list-link" href="{{ post.url | relative_url }}">
+        <span class="post-list-title">{{ post.title }}</span>
+        <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+      </a>
+      {% if post.description %}<p class="post-list-desc">{{ post.description }}</p>{% endif %}
+    </li>
   {% endfor %}
-</div>
+</ul>
